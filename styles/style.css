@@ -1,0 +1,131 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header, main {
+    width: 82%;
+    margin: auto;
+}
+
+.SiteHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* overflow: hidden; */
+}
+
+.Logo {
+    width: 150px;
+}
+
+.Navigation {
+    display: inline;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.Navigation a {
+    text-decoration: none;
+    margin-right: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.MenuWrapper {
+    display: none;
+  }
+
+.Banner-image {
+    height: 65vh;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.Banner-content {
+    padding: 40px;
+    background-color: #4986c4;
+    color: white;
+    text-decoration: none;
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+    width: 50vh;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.Banner-content span {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .Navigation  {display: none;}
+
+    .MenuWrapper {
+        display: block; 
+    }
+    .Banner-content {
+        padding-left: 0px;
+        color: black;
+        background-color: white;
+        text-decoration: none;
+        font-size: 19px;
+        display: inline-block;
+        position: static;
+        width: 280px;            
+    }
+    
+    .Banner-content span {
+        font-size: 32px;   
+    }
+    .Banner-image {
+        height: 35vh;
+    }
+
+    .Logo {
+        width: 200px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+  }  
+
+.Menu-navigation {
+      position: relative;
+      top: 15%;
+      width: 100%;
+      text-align: left;
+      padding-left: 50px;
+      margin-top: 30px;
+  }
+
+.Menu-overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0);
+}
+
+
+.Menu-overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.Menu-overlay .Menu-close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 50px;
+}
